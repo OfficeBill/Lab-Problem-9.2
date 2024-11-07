@@ -42,6 +42,15 @@ int main(void)
 	{
 		cout << "The data are not decreasing." << endl;
 	}
+	trueFalse = hasAdjacentDuplicates(values, size);
+	if (trueFalse == true)
+	{
+		cout << "The data has adjacent duplicates." << endl;
+	}
+	else
+	{
+		cout << "The data does not have adjacent duplicates." << endl;
+	}
 }
 
 bool isSortedIncreasing(int values[], int size)
@@ -76,4 +85,17 @@ bool isSortedDecreasing(int values[], int size)
 		}
 	}
 	return true;
+}
+
+bool hasAdjacentDuplicates(int values[], int size)
+{
+	bool trueFalse = false;
+	for (int i = 0; i < size - 1; i++)
+	{
+		if (values[i] == values[i + 1])
+		{
+			trueFalse =  true;
+		}
+	}
+	return trueFalse;
 }
