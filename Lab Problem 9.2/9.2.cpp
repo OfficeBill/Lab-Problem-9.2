@@ -1,7 +1,7 @@
 // File Name:     Lab Problem 9.2
 // Author:        William Inkrott
 // Date:          11/07/24
-// Description:   Check to see if an array is increasing or decreasing and if there are any duplicates present. 
+// Description:   Check to see if an array is increasing or decreasing and if there are any duplicates present. Nice. 
 
 #include <iostream>
 #include <cmath>
