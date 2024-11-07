@@ -51,6 +51,15 @@ int main(void)
 	{
 		cout << "The data does not have adjacent duplicates." << endl;
 	}
+	trueFalse = hasDuplicates(values, size);
+	if (trueFalse == true)
+	{
+		cout << "The data has duplicates." << endl;
+	}
+	else
+	{
+		cout << "The data does not have duplicates." << endl;
+	}
 }
 
 bool isSortedIncreasing(int values[], int size)
@@ -98,4 +107,16 @@ bool hasAdjacentDuplicates(int values[], int size)
 		}
 	}
 	return trueFalse;
+}
+
+bool hasDuplicates(int values[], int size)
+{
+	if (values[0] == values[1] or values[0] == values[2] or values[0] == values[3] or values[0] == values[4] or values[0] == values[5] or values[1] == values[2] or values[1] == values[3] or values[1] == values[4] or values[1] == values[5] or values[2] == values[3] or values[2] == values[4] or values[2] == values[5] or values[3] == values[4] or values[3] == values[5] or values[4] == values[5])
+	{
+		return true;
+    }
+	else
+	{
+		return false;
+	}
 }
